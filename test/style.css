@@ -10,7 +10,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
-
+  align: center;
 
   border-color: black;
   border: 12px;
@@ -24,5 +24,4 @@ body {
 }
 #mainlogo {
   size: 15px;
-  box-align: center;
 }
