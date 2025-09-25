@@ -8,10 +8,10 @@ body {
 }
 .isobun {
   margin: 0px;
-  padding: 1px;
+  padding: 0px;
   font-family: sans-serif;
 
-  border-radius: 10px;
+
   border-color: black;
   border: 12px;
   background-color:aqua;
