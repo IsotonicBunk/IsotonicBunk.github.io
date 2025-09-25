@@ -8,13 +8,13 @@ body {
 }
 .isobun {
   margin: 0px;
-  padding: 0px;
+  padding: 1px;
   font-family: sans-serif;
   align: center;
 
   border-color: black;
   border: 12px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color:aqua;
   
 }
