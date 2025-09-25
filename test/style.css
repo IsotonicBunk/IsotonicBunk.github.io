@@ -23,7 +23,7 @@ body {
 .isobunel {
     text-align: center;
 }
-.logo {
-  size: 30px;
+#mainlogo {
+  size: 15px;
   box-align: center;
 }
