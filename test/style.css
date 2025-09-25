@@ -21,7 +21,7 @@ body {
     display: inline;
 }
 .isobunel {
-    text-align: center;
+    box-align: center;
 }
 #mainlogo {
   size: 15px;
