@@ -25,6 +25,6 @@ body {
 
 }
 #mainlogo {
-  display: flex;
-  size: 15px;
+    margin: auto
+    size: 25px;
 }
