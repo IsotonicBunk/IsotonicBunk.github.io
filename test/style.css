@@ -21,11 +21,10 @@ body {
 .isobuntxt {
     display: inline;
 }
-.isobunlogo {
-    display: flex;
-}
+
 
 }
 #mainlogo {
+  display: flex;
   size: 15px;
 }
