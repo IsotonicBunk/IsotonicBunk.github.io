@@ -28,3 +28,11 @@ body {
     margin: auto
     size: 25px;
 }
+.headers {
+    align: center;
+    font-family: sans-serif;
+}
+.links {
+    align: center;
+    font-family: sans-serif;
+}
