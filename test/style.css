@@ -25,14 +25,19 @@ body {
 
 }
 #mainlogo {
-    margin: auto
+    margin-left: auto; 
+    margin-right: auto;
     size: 25px;
 }
 .headers {
+    margin-left: auto; 
+    margin-right: auto;
     align: center;
     font-family: sans-serif;
 }
 .links {
-    align: center;
     font-family: sans-serif;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
 }
