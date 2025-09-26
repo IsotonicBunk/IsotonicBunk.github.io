@@ -21,6 +21,9 @@ body {
 .isobuntxt {
     display: inline;
 }
+.isobunlogo {
+    align: center;
+}
 
 }
 #mainlogo {
