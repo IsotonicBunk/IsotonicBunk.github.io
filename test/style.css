@@ -22,7 +22,7 @@ body {
     display: inline;
 }
 .isobunlogo {
-    box-align: center;
+    display: flex;
 }
 
 }
