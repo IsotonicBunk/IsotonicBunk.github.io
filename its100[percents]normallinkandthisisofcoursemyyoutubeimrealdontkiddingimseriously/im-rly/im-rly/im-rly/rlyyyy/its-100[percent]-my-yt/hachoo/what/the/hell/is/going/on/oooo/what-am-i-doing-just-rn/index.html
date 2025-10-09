@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Сайт семёна
+		</title>
+	</head>
+	
+	<body>
+		<div id="glav">
+			<h1>Баланс:<span id="score"> 0</span></h1>
+			<input type="tel" placeholder="+7 (000) 000-00-00" id="tel">
+			<div id="button">
+				<img src="https://isotonicbunk.github.io/assets/site/imgsrc/c8a23000-214d-433d-9750-44047a6a0c85.png" onclick="UpdateBalance()" width="75" height="75"></button>
+			</div>
+			<div id="">
+		</div>
+		<div id="glavcena">
+			<h1>Цена: <span id="cena"> 1</span></h1>
+			<button onclick="Upgrade()">Улучшить</button>
+		</div>
+		
+		<div id="Glav">
+			<div id="catalog">
+				<div id="one">
+					<img src="driving-in-my-car-right-after-a-beer-asgore.gif">
+					<h1>Цена:</h1>
+					<span id="SaleOne">10</span>
+					<h1>Улучшение:</h1>
+					<h2>
+						<span id="valueOne">
+							1
+						</span>в секунду
+					</h2>
+					<button onclick="BuySuvenirOne()">Купить</button>
+				</div>
+			</div>
+		</div>
+		
+		<style>
+			#glav{
+				border: 3px, solid, blue;
+				border-radius: 20px;
+				width: 326px;
+				height: 85px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 100px;
+				padding-bottom: 375px;
+				padding-top: 0px;
+			}
+			#button {
+				margin-left: 120px;
+			}
+			#tel {
+				margin-left: 80px;
+			}
+			body {
+				font-family: sans-serif;
+			}	
+		</style>
+
+
+		<script>
+			var balance = 0;
+			var multiplier = 1;
+			var UpdateSuvenir = 0;
+			function UpdateBalance() {
+				if (document.getElementById("tel").value != "") {
+				balance= (balance + multiplier);
+				document.getElementById("score").textContent = " " + balance + " зачислено на номер " + document.getElementById("tel").value;
+				} else {
+					document.getElementById("score").textContent = " Номер телефона пуст"
+				}
+			}
+			function Upgrade() {
+				if (balance >= (multiplier * 5)) {
+					balance = (balance - (multiplier * 5));
+					multiplier++;
+					document.getElementById("score").textContent = " " + balance + " зачислено на номер " + document.getElementById("tel").value;
+					document.getElementById("cena").textContent = multiplier;
+					alert("Уровень улучшен!");
+				} else {
+					alert("Недостаточно средств на счету!");
+				}
+			}
+			function BuySuvenirOne() {
+				if (balance >= document.getElementById("SaleOne").textContent) {
+					UpdateSuvenir = UpdateSuvenir + parseInt(document.getElementById("valueOne").textContent.replace(/[^0-9]/g,''));
+					balance = balance - document.getElementById("SaleOne").innerText
+				}
+
+			}
+			setInterval(() => {
+				balance = balance + UpdateSuvenir;
+				document.getElementById("score").textContent = " " + balance + " зачислено на номер " + document.getElementById("tel").value;
+			}, 500);
+		</script>
+	</body>
+</html>	
