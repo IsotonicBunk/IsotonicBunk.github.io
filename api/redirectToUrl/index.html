@@ -9,6 +9,7 @@
     
 </body>
 <script>
+    trgUrl = URLSearchParams(window.location.search).get("trgUrl")
     window.onload = redirectUrl()
     function redirectUrl() {
         window.location.href = trgUrl
